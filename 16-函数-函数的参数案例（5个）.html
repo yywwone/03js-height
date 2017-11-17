@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        //总结：谁变化，就设置谁0为参数；
+                //参数设置多了比较啰嗦，设置少了功能不全；
+//        - 1.求1-n之间所有数的和
+//        - 2.求n-m之间所有数的和
+//        - 3.圆的面积
+//        - 4.求2个数中的最大值
+//        - 5.求3个数中的最大值
+
+
+//        - 1.求1-n之间所有数的和
+        //调用
+//        getSum(100);
+//
+//        function getSum(n){
+//            //定义变量
+//            var sum = 0;
+//            for(var i=1;i<=n;i++){
+//                sum += i;
+//            }
+//
+//            alert(sum);
+//        }
+
+
+
+
+//        - 2.求n-m之间所有数的和
+
+        //调用
+//        getSum(10,12)
+
+        //参数的选取，哪些值是变化的就选那些；
+            //n小，m大；
+//        function getSum(n,m){
+//            var sum = 0;
+//            for(var i=n;i<=m;i++){
+//                sum += i;
+//            }
+//            alert(sum);
+//        }
+
+
+
+
+//        - 3.圆的面积
+        //技术点：pi*r*r;
+
+        //调用
+//        getArea(10);
+
+        //把圆的半径设置为变量
+//        function getArea(r){
+//            var area = 3.14*r*r;
+//            alert(area);
+//        }
+
+
+
+
+//        - 4.求2个数中的最大值
+
+        //调用
+//        getMaxOfTwoNumber(111,222);
+//
+//        //变量为两个数
+//        function getMaxOfTwoNumber(num1,num2){
+//            //判断：谁大打印纸
+////            if(num1>num2){
+////                alert(num1);
+////            }else{
+////                alert(num2);
+////            }
+//
+//            //优化
+//            var num = num1>num2?num1:num2;
+//            alert(num);
+////            alert(num1>num2?num1:num2);
+//        }
+
+
+
+
+
+//        - 5.求3个数中的最大值
+            //思路：两两比较之后，大的在和第三个数比较；
+
+        //调用：
+        getMax(2,11,0);
+
+        function getMax(a,b,c){
+            //思路：两两比较之后，大的在和第三个数比较；
+//            if(a>b){
+//                //大的在和c比较
+//                if(a>c){
+//                    alert(a);
+//                }else{
+//                    alert(c);
+//                }
+//            }else{
+//                //大的在和c比较
+//                if(b>c){
+//                    alert(b);
+//                }else{
+//                    alert(c);
+//                }
+//            }
+
+            //优化：
+//            var num = a>b?a:b;
+//            num = num>c?num:c;
+//            alert(num);
+
+
+            alert( (a>b?a:b)>c?(a>b?a:b):c );
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+//    求1-100之间所有数的乘积
+        //思路：求和设置计数器的时候初始化值为0；
+        //思路：求积设置计数器的时候初始化值为1；
+
+//    求1-100之间所有奇数的和
+        //  %2 === 1;
+
+//    计算1-100之间能3整除的数的和
+        //  可以结合continue来做...
+
+//    计算1-100之间不能被7整除的数的和
+        //  可以结合continue来做...
+
+
+
+
+//    重点1.本金10000元存入银行，年利率是千分之三，
+//          每过1年，将本金和利息相加作为新的本金。
+//          计算5年后，获得的本金是多少？
+
+    var money = 10000;
+    var rote = 0.4;
+    //循环5次模拟5年；(本金+利息: 重新赋值给money作为第二年的本金...)
+    for(var i=1;i<=5;i++){
+//        money = money + money*0.4;
+        //优化
+//        money = money(1+0.4);
+//        money = money(1+rote);
+        money *= 1+rote;
+    }
+
+    alert(money);
+
+
+
+</script>
+
+
+</body>
+</html>

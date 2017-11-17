@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+
+    //1.数组的长度;   length属性;  有多少个元素，长度就是多少；
+    var arr = ["a","b","c"];
+//    console.log(arr);
+//    console.log(arr.length);
+//    console.log("---------");
+//        //length可以被修改；
+//    arr.length = 5;//可以获取值也可以赋值；
+//    console.log(arr);
+//    console.log(arr.length);
+
+
+    //2.数组的索引值；  索引值: 就是编号和序号的意思，只不过，索引值从0开始，最大索引值比数组的长度小1；
+//    console.log(arr);
+
+
+    //3.数组中元素的获取和赋值；
+        //获取   数组名[索引值]
+//    console.log(arr[0]);
+//    console.log(arr[1]);
+//    console.log(arr[2]);
+
+        //赋值   数组名[索引值] = "123";
+        arr[0] = "123";
+        arr[1] = "456";
+        arr[2] = "789";
+
+        arr[9] = "000";//中间的会用undefined补齐；
+        console.log(arr);
+
+        console.log(arr[10000]);//数组中超出索引值的元素默认undefined；
+
+
+
+</script>
+
+
+</body>
+</html>

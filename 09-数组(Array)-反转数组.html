@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    //反转数组：有三种方法！
+
+    //1.正向遍历，反向添加;(有新数组)
+    //2.反向遍历，正向添加;(有新数组)
+    //3.原数组前后交换位置;(没有新数组)
+
+
+    var arr = [1,2,3,4,5,6];
+
+    //1.正向遍历，反向添加;(有新数组)
+//    var newArr = [];
+//    for(var i=0;i<arr.length;i++){
+//        //i:  0,1,2,3,4,5
+//        //要: 5,4,3,2,1,0
+//        // 5-i;  arr.length-1-i;
+//
+//        newArr[newArr.length] = arr[arr.length-1-i];//从后往前放入;
+//    }
+
+
+
+    //2.反向遍历，正向添加;(有新数组)
+//    var newArr = [];
+//    //反向遍历
+//    for(var i=arr.length-1;i>=0;i--){
+//        newArr[newArr.length] = arr[i];//怎么遍历怎么添加；
+//    }
+
+
+
+
+    //3.原数组前后交换位置;(没有新数组)
+    console.log(arr);
+    for(var i=0;i<arr.length/2;i++){
+        //前后元素交换位置
+        var temp = arr[i];
+        arr[i] = arr[arr.length-1-i];//0==倒数第一个；   1==倒数第二个；...
+        arr[arr.length-1-i] = temp;
+    }
+
+
+    console.log(arr);
+//    console.log(newArr);
+</script>
+
+</body>
+</html>

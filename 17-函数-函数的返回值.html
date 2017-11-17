@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+
+        //返回值：函数内部的变量外部无法使用，需要关键字进行返回，外部才能使用；
+            //总结：1.要么返回一个函数内部的值，让外部使用；
+            //总结：2.要么切断函数(有保险丝的作业)；
+
+
+//        var sum;
+//        fn(111,222);
+//        //函数内部的变量外部获取不到；
+//            //如果想要使用就要用返回值
+//        alert(sum);
+//
+//        function fn(aaa,bbb){
+//            var sum = aaa+bbb;
+//        }
+
+
+
+        //关键字：return;
+//        var aaa = fn();
+//        console.log(aaa);
+//
+//
+//        function fn(){
+//            console.log(222);
+//            return 111;
+//        }
+
+
+
+
+
+        //函数返回值注意事项（4点）
+//        如果函数没有显示的使用 return语句 ，那么函数有默认的返回值：undefined
+//        alert(fn());//执行完毕函数fn，之后弹窗fn函数的返回值；
+//        function fn(){
+//            var sum = 111;
+//        }
+
+
+//        如果函数使用 return语句，那么跟再return后面的值，就成了函数的返回值
+//        alert(fn());//执行完毕函数fn，之后弹窗fn函数的返回值；
+//        function fn(){
+//            var sum = 111;
+//            return sum;
+//        }
+
+
+
+//        如果函数使用 return语句，但是return后面没有任何值，那么函数的返回值也是：undefined
+//        alert(fn());//执行完毕函数fn，之后弹窗fn函数的返回值；
+//        function fn(){
+//            var sum = 111;
+//            return;
+//        }
+
+
+
+
+//        函数使用return语句后，这个函数会在执行完 return 语句之后停止并立即退出，也就是说return后面的所有其他代码都不会再执行。
+//        fn();
+//        function fn(){
+//            console.log(1);
+//            return;//可以切断代码
+//            console.log(2);
+//            console.log(3);
+//        }
+
+
+
+
+
+    </script>
+</body>
+</html>

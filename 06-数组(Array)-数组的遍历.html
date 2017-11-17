@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <script>
+        //数组的遍历(最重要): 用for循环把数组中的每一个元素都获取到并可以逐一操作
+        var arr = [1,2,3,4,5];
+
+        //遍历数组要用for循环（索引值从0开始，所以i等于0）
+        for(var i=0;i<arr.length;i++){
+            //获取数组中的元素，并操作
+            console.log(arr[i]);
+
+            //操作数组中你的每一个元素；
+            arr[i] = arr[i]*100;
+
+        }
+
+        console.log(arr);
+    </script>
+
+
+</body>
+</html>
